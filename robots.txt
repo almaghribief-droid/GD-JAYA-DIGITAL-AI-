@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://almaghribief-droid.github.io/GD-JAYA-DIGITAL-AI-/sitemap.xml
