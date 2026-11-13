@@ -535,3 +535,68 @@ footer small {
     height: 175px;
   }
 }
+
+
+/* Portfolio concept gallery */
+.portfolio {
+  background: #0d0f14;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+.portfolio-card {
+  overflow: hidden;
+  border: 1px solid #292d37;
+  border-radius: 10px;
+  background: #141720;
+  transition: transform .3s ease, border-color .3s ease;
+}
+.portfolio-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+.portfolio-card > img {
+  display: block;
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
+.portfolio-info {
+  padding: 23px;
+}
+.portfolio-info span {
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.portfolio-info h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.portfolio-info p,
+.portfolio-note {
+  color: var(--muted);
+  font-size: 13px;
+}
+.portfolio-note {
+  margin-top: 22px;
+  font-size: 11px;
+  font-style: italic;
+}
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-card > img {
+    height: 190px;
+  }
+}
