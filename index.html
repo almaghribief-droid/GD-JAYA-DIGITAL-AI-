@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GD JAYA DIGITAL menyediakan jasa pembuatan website profesional untuk bisnis, UMKM, dan perusahaan.">
+  <meta name="description" content="GD JAYA DIGITAL membantu UMKM dan bisnis membangun website profesional, responsif, company profile, katalog produk, landing page, dan toko online.">
+  <meta name="theme-color" content="#08090c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GD JAYA DIGITAL | Website Profesional">
+  <meta property="og:description" content="Solusi website modern dan responsif untuk bisnis dan UMKM.">
+  <meta property="og:url" content="https://almaghribief-droid.github.io/GD-JAYA-DIGITAL-AI-/">
   <title>GD JAYA DIGITAL | Website Profesional</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +19,14 @@
 
 <header class="header">
   <a href="#" class="logo">GD <span>JAYA</span> DIGITAL</a>
-  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navigation">☰</button>
   <nav id="navigation">
     <a href="#beranda">Beranda</a>
     <a href="#layanan">Layanan</a>
     <a href="#portofolio">Portofolio</a>
     <a href="#keunggulan">Keunggulan</a>
     <a href="#proses">Proses</a>
+    <a href="#faq">FAQ</a>
     <a href="#kontak" class="nav-button">Konsultasi</a>
   </nav>
 </header>
@@ -39,7 +45,8 @@
   <div class="hero-visual">
     <div class="visual-card">
       <div class="visual-top"><span></span><span></span><span></span></div>
-      <img class="hero-photo" src="https://images.unsplash.com/photo-1691073121676-1ab3a6d3d743?auto=format&fit=crop&w=1200&q=85" alt="Workspace pengembangan website di laptop dan monitor" loading="eager">\n      <div class="visual-label">YOUR DIGITAL PRESENCE</div>
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1691073121676-1ab3a6d3d743?auto=format&fit=crop&w=1200&q=85" alt="Workspace pengembangan website di laptop dan monitor" loading="eager">
+      <div class="visual-label">YOUR DIGITAL PRESENCE</div>
       <div class="visual-title">BUILD YOUR<br><strong>FUTURE.</strong></div>
       <div class="visual-line"></div>
       <div class="visual-caption">DESIGN · TECHNOLOGY · INNOVATION</div>
@@ -60,32 +67,38 @@
   <div class="service-grid">
     <article class="service-card">
       <span class="number">01</span>
-      <img class="service-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85" alt="Pembuatan website company profile" loading="lazy">\n      <h3>Company Profile</h3>
+      <img class="service-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85" alt="Pembuatan website company profile" loading="lazy">
+      <h3>Company Profile</h3>
       <p>Website profil perusahaan untuk memperkenalkan identitas, visi, layanan, dan informasi bisnis.</p>
     </article>
     <article class="service-card">
       <span class="number">02</span>
-      <img class="service-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Tampilan data dan katalog produk digital" loading="lazy">\n      <h3>Katalog Produk</h3>
+      <img class="service-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Tampilan data dan katalog produk digital" loading="lazy">
+      <h3>Katalog Produk</h3>
       <p>Tampilkan produk dan layanan dengan susunan yang menarik dan mudah dijelajahi.</p>
     </article>
     <article class="service-card">
       <span class="number">03</span>
-      <img class="service-image" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=85" alt="Desain landing page profesional" loading="lazy">\n      <h3>Landing Page</h3>
+      <img class="service-image" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=85" alt="Desain landing page profesional" loading="lazy">
+      <h3>Landing Page</h3>
       <p>Halaman promosi khusus untuk memperkenalkan produk, penawaran, dan mengarahkan calon pelanggan.</p>
     </article>
     <article class="service-card">
       <span class="number">04</span>
-      <img class="service-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Bisnis dan toko online" loading="lazy">\n      <h3>Website Toko Online</h3>
+      <img class="service-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Bisnis dan toko online" loading="lazy">
+      <h3>Website Toko Online</h3>
       <p>Bangun etalase digital untuk menampilkan produk dan membantu proses pemesanan.</p>
     </article>
     <article class="service-card">
       <span class="number">05</span>
-      <img class="service-image" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85" alt="Desain dan pengembangan website" loading="lazy">\n      <h3>Website Custom</h3>
+      <img class="service-image" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85" alt="Desain dan pengembangan website" loading="lazy">
+      <h3>Website Custom</h3>
       <p>Website dengan tampilan dan fitur yang disesuaikan dengan kebutuhan proyek Anda.</p>
     </article>
     <article class="service-card">
       <span class="number">06</span>
-      <img class="service-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85" alt="Perawatan dan pengelolaan website" loading="lazy">\n      <h3>Perawatan Website</h3>
+      <img class="service-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85" alt="Perawatan dan pengelolaan website" loading="lazy">
+      <h3>Perawatan Website</h3>
       <p>Bantuan pembaruan konten, pemeliharaan, dan pengembangan website.</p>
     </article>
   </div>
@@ -139,6 +152,64 @@
   </div>
 </section>
 
+
+<section class="section faq" id="faq">
+  <span class="eyebrow">PERTANYAAN UMUM</span>
+  <h2>Yang Sering Ingin Ditanyakan</h2>
+  <p class="section-desc">Informasi awal sebelum Anda memulai proyek website bersama kami.</p>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>Apakah website bisa dibuka melalui HP?</summary>
+      <p>Ya. Tampilan website dirancang responsif agar menyesuaikan layar ponsel, tablet, maupun komputer.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Apakah saya bisa meminta desain sesuai brand bisnis?</summary>
+      <p>Bisa. Warna, konten, susunan halaman, dan kebutuhan fitur dibahas terlebih dahulu saat konsultasi.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Berapa biaya pembuatan website?</summary>
+      <p>Biaya mengikuti jenis website, jumlah halaman, fitur, serta kebutuhan domain dan hosting. Kami akan membahas kebutuhan dan memberikan penawaran sebelum pengerjaan dimulai.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Apakah saya perlu menyiapkan materi sendiri?</summary>
+      <p>Materi seperti logo, foto, profil bisnis, daftar produk, dan informasi kontak akan membantu proses. Jika belum lengkap, kita bisa membahas kebutuhan materinya saat konsultasi.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Bagaimana cara memulai pemesanan?</summary>
+      <p>Isi formulir singkat di bawah atau hubungi WhatsApp. Ceritakan jenis bisnis dan website yang Anda butuhkan.</p>
+    </details>
+  </div>
+</section>
+
+<section class="section project-brief" id="brief">
+  <div class="brief-copy">
+    <span class="eyebrow">KONSULTASI PROYEK</span>
+    <h2>Ceritakan Website yang Anda Butuhkan</h2>
+    <p>Isi informasi singkat berikut. Pesan konsultasi akan disiapkan melalui WhatsApp agar kebutuhan awal proyek lebih jelas.</p>
+  </div>
+  <form class="brief-form" id="briefForm">
+    <label for="clientName">Nama Anda</label>
+    <input id="clientName" name="clientName" type="text" placeholder="Nama panggilan / nama bisnis" required>
+    <label for="businessType">Jenis bisnis</label>
+    <input id="businessType" name="businessType" type="text" placeholder="Contoh: toko, kuliner, jasa, organisasi" required>
+    <label for="websiteType">Website yang dibutuhkan</label>
+    <select id="websiteType" name="websiteType" required>
+      <option value="">Pilih kebutuhan website</option>
+      <option>Company Profile</option>
+      <option>Katalog Produk</option>
+      <option>Landing Page</option>
+      <option>Website Toko Online</option>
+      <option>Website Custom</option>
+      <option>Perawatan Website</option>
+      <option>Belum yakin, perlu konsultasi</option>
+    </select>
+    <label for="projectNotes">Catatan kebutuhan (opsional)</label>
+    <textarea id="projectNotes" name="projectNotes" rows="4" placeholder="Ceritakan fitur atau gambaran website yang diinginkan"></textarea>
+    <button class="button gold brief-submit" type="submit">Kirim Konsultasi via WhatsApp</button>
+    <p class="form-note">Tombol ini akan membuka WhatsApp dengan pesan yang sudah disusun. Pesan belum terkirim sampai Anda menekan tombol kirim di WhatsApp.</p>
+  </form>
+</section>
+
 <section class="contact section" id="kontak">
   <span class="eyebrow">MULAI PROYEK ANDA</span>
   <h2>Siap Membawa Bisnis Anda ke Dunia Digital?</h2>
@@ -146,6 +217,8 @@
   <a class="button gold" href="https://wa.me/6288200652974?text=Halo%20GD%20JAYA%20DIGITAL%2C%20saya%20ingin%20konsultasi%20pembuatan%20website." target="_blank" rel="noopener">Hubungi Kami via WhatsApp</a>
 </section>
 </main>
+
+<a class="floating-wa" href="https://wa.me/6288200652974?text=Halo%20GD%20JAYA%20DIGITAL%2C%20saya%20ingin%20bertanya%20tentang%20jasa%20website." target="_blank" rel="noopener" aria-label="Chat GD JAYA DIGITAL melalui WhatsApp">WhatsApp</a>
 
 <footer>
   <a href="#" class="logo">GD <span>JAYA</span> DIGITAL</a>
