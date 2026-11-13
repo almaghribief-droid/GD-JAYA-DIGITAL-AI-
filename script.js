@@ -53,3 +53,28 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+
+
+// Project inquiry form: compose a WhatsApp message for the visitor.
+const briefForm = document.getElementById("briefForm");
+if (briefForm) {
+  briefForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = document.getElementById("clientName").value.trim();
+    const business = document.getElementById("businessType").value.trim();
+    const website = document.getElementById("websiteType").value;
+    const notes = document.getElementById("projectNotes").value.trim();
+
+    const message = [
+      "Halo GD JAYA DIGITAL, saya ingin konsultasi pembuatan website.",
+      "",
+      "Nama: " + name,
+      "Jenis bisnis: " + business,
+      "Kebutuhan website: " + website,
+      notes ? "Catatan: " + notes : ""
+    ].filter(Boolean).join("\n");
+
+    const whatsappUrl = "https://wa.me/6288200652974?text=" + encodeURIComponent(message);
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  });
+}
