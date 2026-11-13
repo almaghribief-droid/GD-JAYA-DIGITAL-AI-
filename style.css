@@ -466,3 +466,23 @@ footer small {
     transition-duration: .01ms !important;
   }
 }
+
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+}
+::selection {
+  color: #08090c;
+  background: var(--gold-light);
+}
