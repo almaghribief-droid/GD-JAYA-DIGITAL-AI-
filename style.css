@@ -600,3 +600,148 @@ footer small {
     height: 190px;
   }
 }
+
+
+/* FAQ, project inquiry form, and floating WhatsApp action */
+.faq {
+  background: #08090c;
+}
+.faq-list {
+  max-width: 900px;
+  margin-top: 35px;
+  display: grid;
+  gap: 12px;
+}
+.faq-item {
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid #292d37;
+  border-radius: 8px;
+}
+.faq-item[open] {
+  border-color: rgba(214,173,85,.65);
+}
+.faq-item summary {
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: -4px;
+  color: var(--gold);
+  font-size: 24px;
+  font-weight: 400;
+}
+.faq-item[open] summary::after {
+  content: "−";
+}
+.faq-item p {
+  margin-top: 13px;
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.project-brief {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: start;
+  gap: 55px;
+  background: #111319;
+}
+.brief-copy p {
+  max-width: 430px;
+  color: var(--muted);
+}
+.brief-form {
+  display: grid;
+  gap: 10px;
+  padding: 28px;
+  border: 1px solid #30333c;
+  border-radius: 10px;
+  background: #171a22;
+}
+.brief-form label {
+  margin-top: 7px;
+  color: #e5e5e5;
+  font-size: 13px;
+  font-weight: 600;
+}
+.brief-form input,
+.brief-form select,
+.brief-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  color: var(--white);
+  background: #0d0f14;
+  border: 1px solid #343945;
+  border-radius: 5px;
+  font: inherit;
+  font-size: 14px;
+}
+.brief-form input::placeholder,
+.brief-form textarea::placeholder {
+  color: #777d89;
+}
+.brief-form select:invalid {
+  color: #777d89;
+}
+.brief-form input:focus,
+.brief-form select:focus,
+.brief-form textarea:focus {
+  outline: 2px solid rgba(214,173,85,.45);
+  border-color: var(--gold);
+}
+.brief-submit {
+  border: 0;
+  cursor: pointer;
+  margin-top: 12px;
+  font-family: inherit;
+}
+.form-note {
+  color: #9296a0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.floating-wa {
+  position: fixed;
+  z-index: 900;
+  right: 22px;
+  bottom: 22px;
+  padding: 13px 19px;
+  color: #08110b;
+  background: #b9e7a8;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  font-size: 13px;
+  font-weight: 800;
+  transition: transform .25s ease;
+}
+.floating-wa:hover {
+  transform: translateY(-4px);
+}
+@media (max-width: 800px) {
+  .project-brief {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .brief-form {
+    padding: 20px;
+  }
+  .floating-wa {
+    right: 14px;
+    bottom: 14px;
+    padding: 11px 16px;
+  }
+}
